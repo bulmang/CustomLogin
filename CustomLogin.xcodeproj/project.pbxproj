@@ -14,6 +14,9 @@
 		439F6FA428EF207B0000F1E6 /* CustomLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439F6FA328EF207B0000F1E6 /* CustomLoginTests.swift */; };
 		439F6FAE28EF207B0000F1E6 /* CustomLoginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439F6FAD28EF207B0000F1E6 /* CustomLoginUITests.swift */; };
 		439F6FB028EF207B0000F1E6 /* CustomLoginUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439F6FAF28EF207B0000F1E6 /* CustomLoginUITestsLaunchTests.swift */; };
+		43D1CCDE28F546BA00A61C2B /* FindIdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D1CCDD28F546BA00A61C2B /* FindIdView.swift */; };
+		43F08EA928EFC9E40077C8CB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F08EA828EFC9E40077C8CB /* LoginView.swift */; };
+		43F08EAC28EFCB4E0077C8CB /* Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F08EAB28EFCB4E0077C8CB /* Custom.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,9 @@
 		439F6FA928EF207B0000F1E6 /* CustomLoginUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomLoginUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		439F6FAD28EF207B0000F1E6 /* CustomLoginUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoginUITests.swift; sourceTree = "<group>"; };
 		439F6FAF28EF207B0000F1E6 /* CustomLoginUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoginUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		43D1CCDD28F546BA00A61C2B /* FindIdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindIdView.swift; sourceTree = "<group>"; };
+		43F08EA828EFC9E40077C8CB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		43F08EAB28EFCB4E0077C8CB /* Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Custom.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +101,8 @@
 		439F6F9028EF207A0000F1E6 /* CustomLogin */ = {
 			isa = PBXGroup;
 			children = (
+				43F08EA728EFC9D80077C8CB /* Model */,
+				43F08EA628EFC9D10077C8CB /* View */,
 				439F6F9128EF207A0000F1E6 /* CustomLoginApp.swift */,
 				439F6F9328EF207A0000F1E6 /* ContentView.swift */,
 				439F6F9528EF207B0000F1E6 /* Assets.xcassets */,
@@ -127,6 +135,23 @@
 				439F6FAF28EF207B0000F1E6 /* CustomLoginUITestsLaunchTests.swift */,
 			);
 			path = CustomLoginUITests;
+			sourceTree = "<group>";
+		};
+		43F08EA628EFC9D10077C8CB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				43F08EA828EFC9E40077C8CB /* LoginView.swift */,
+				43D1CCDD28F546BA00A61C2B /* FindIdView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		43F08EA728EFC9D80077C8CB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				43F08EAB28EFCB4E0077C8CB /* Custom.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +284,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43F08EA928EFC9E40077C8CB /* LoginView.swift in Sources */,
+				43D1CCDE28F546BA00A61C2B /* FindIdView.swift in Sources */,
 				439F6F9428EF207A0000F1E6 /* ContentView.swift in Sources */,
+				43F08EAC28EFCB4E0077C8CB /* Custom.swift in Sources */,
 				439F6F9228EF207A0000F1E6 /* CustomLoginApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,7 +457,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
@@ -467,7 +495,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
